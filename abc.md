@@ -63,5 +63,15 @@ Other Options... | Description
 
 
 
-##### Logs:
-* just released.
+### Logs
+
+Version | Log 
+:--- | :--- 
+3.0 | Recreated with a new structure and commands + Ability to search(/tk find ...)
+2.1 | showing video/music titles on load
+2.0 | now you can use simple scripts to change channels + you can set default urls for all channels in edit mode
+1.7 | people will join at the current time of video (not from the begining) (youtube tracks only)
+1.6 | now you can add video source's official embed parameters for more customization.
+1.5 | fixed priority of ban check in script structure. added a bunch of report messages (private chat).
+1.4 | "/tkey" -> "/tpass" and now owner will get debug (Ctrl + D) message for each media request.
+1.3 | adding "/tban all" and the ability to set password for public channel
