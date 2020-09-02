@@ -27,7 +27,7 @@ Command | Description
 - Twitch(Stream/Video)
 - SoundCloud
 - Vimeo
-- Mp4
+- .Mp4
 ```
 
 
