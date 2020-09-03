@@ -1,7 +1,7 @@
 ![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)
 # TKMedia Documentation ([BUY/UPDATE](https://store.sansar.com/listings/1b1274e3-0f40-45f4-8d82-325d1a1c5235/tkmedia-v21))
 > - current version: 3.0
-> - release date   : September 2 2020
+> - release date   : September 3 2020
 
 TKMedia Includes Two Scripts on Purchase. `Media` and `Event`.
 - `Media` is your Main script and you have to add it to your Experience only once. by Adding this script, you can use all the ChatBox Commands that is Described in this page.
