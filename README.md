@@ -67,6 +67,7 @@ Other Options... | Description
 
 Version | Log 
 :--- | :--- 
+3.2 | Fixed the bug related to opening mp4 files
 3.0 | Recreated with a new structure and commands + Ability to search(/tk find ...)
 2.1 | showing video/music titles on load
 2.0 | now you can use simple scripts to change channels + you can set default urls for all channels in edit mode
