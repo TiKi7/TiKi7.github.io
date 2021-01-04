@@ -1,6 +1,6 @@
 ![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)
 # TKMedia Documentation ([BUY/UPDATE](https://store.sansar.com/listings/1b1274e3-0f40-45f4-8d82-325d1a1c5235/tkmedia))
-> - current version: 3.0
+> - current version: 3.2
 > - release date   : September 3 2020
 
 TKMedia Includes Two Scripts on Purchase. `Media` and `Event`.
