@@ -1,7 +1,7 @@
 ![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)
 # TKMedia Documentation ([BUY/UPDATE](https://store.sansar.com/listings/1b1274e3-0f40-45f4-8d82-325d1a1c5235/tkmedia))
-> - current version: 3.2
-> - release date   : January 5 2021
+> - current version: 3.3
+> - release date   : January 28 2021
 
 TKMedia Includes Two Scripts on Purchase. `Media` and `Event`.
 - `Media` is your Main script and you have to add it to your Experience only once. by Adding this script, you can use all the ChatBox Commands that is Described in this page.
@@ -27,6 +27,7 @@ Command | Description
 - Twitch(Stream/Video)
 - SoundCloud
 - Vimeo
+- Wixia
 - .Mp4
 ```
 
@@ -67,6 +68,7 @@ Other Options... | Description
 
 Version | Log 
 :--- | :--- 
+3.3 | Added WIXIA.com to supported websites. Fixed the Crash on Opening Vimeo videos.
 3.2 | Fixed the bug related to opening mp4 files
 3.0 | Recreated with a new structure and commands + Ability to search(/tk find ...)
 2.1 | showing video/music titles on load
