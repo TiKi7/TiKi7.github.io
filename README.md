@@ -68,6 +68,8 @@ Other Options... | Description
 
 Version | Log 
 :--- | :--- 
+3.3.2 | Added Bilibili.com to supported websites. (its a chinese web service)
+3.3.1 | Minor changes
 3.3 | Added WIXIA.com to supported websites. Fixed the Crash on Opening Vimeo videos.
 3.2 | Fixed the bug related to opening mp4 files
 3.0 | Recreated with a new structure and commands + Ability to search(/tk find ...)
