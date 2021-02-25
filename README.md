@@ -56,6 +56,7 @@ Command | Description
 /tlock on | [ModeratorsOnly] Activates the Lock
 /tlock off | [ModeratorsOnly] DeActivates the Lock
 
+> You can use `tlock on` or `tlock off` as Event names as well.
 
 Other Options... | Description
  :--- | :---
@@ -68,6 +69,7 @@ Other Options... | Description
 
 Version | Log 
 :--- | :--- 
+3.3.3 | Added tlock on and tlock off event names
 3.3.2 | Added Bilibili.com to supported websites. (its a chinese web service)
 3.3.1 | Minor changes
 3.3 | Added WIXIA.com to supported websites. Fixed the Crash on Opening Vimeo videos.
