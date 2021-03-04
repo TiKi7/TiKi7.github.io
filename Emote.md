@@ -1,6 +1,22 @@
 # Emotes
 
 |
+[chair-m-1](https://store.sansar.com/listings/d75c837c-3eba-4570-bfe9-25d5a469a641/chair-m-1) |
+[chair-m-2](https://store.sansar.com/listings/c122ba69-6b20-45cd-a08f-2e1e45474c82/chair-m-2) |
+[chair-m-3](https://store.sansar.com/listings/7306b0a0-59ec-48c2-9f00-ca2af25bc75f/chair-m-3) |
+[chair-kneel-m](https://store.sansar.com/listings/399e1084-e405-43ba-85e6-889b58f1f30c/chair-kneel-m) |
+[chair-balance-m-1](https://store.sansar.com/listings/bd19e019-fede-43f2-8d13-d8a563d7d3f3/chair-balance-m-1) |
+
+|
+[chair-f-1](https://store.sansar.com/listings/c400b938-d690-409e-8027-c9cea5a40fdc/chair-f-1) |
+[chair-f-2](https://store.sansar.com/listings/19d16d4b-8761-4b16-8dbe-9787ed141e2c/chair-f-2) |
+[chair-f-3](https://store.sansar.com/listings/390d2ba2-e05c-46fb-933f-41ac7e2d7946/chair-f-3) |
+[chair-f-4](https://store.sansar.com/listings/670bd03f-6bd2-4d45-9eb4-ce997000c01f/chair-f-4) |
+[chair-f-4-cast-1](https://store.sansar.com/listings/301b2c89-51e4-49ce-8b70-83a480475a67/chair-f-4-cast-1) |
+[chair-balance-f-1](https://store.sansar.com/listings/d8aaf074-bbe8-4a0d-a5c6-d931bc6831a7/chair-balance-f-1) |
+[chair-f-5](https://store.sansar.com/listings/a83849c0-2101-4aaa-a6c5-9d4dbb30e269/chair-f-5) |
+
+|
 [little-one-f-1](https://store.sansar.com/listings/16bf38de-9f6b-4e43-b90a-a2d0f86005b0/little-one-f-1) |
 [little-one-m-1](https://store.sansar.com/listings/6c68f624-da1d-420a-b203-7fe7a8d70bb4/little-one-m-1) |
 
@@ -27,7 +43,3 @@
 |
 [wtf-1-m](https://store.sansar.com/listings/56e87d86-aac6-4968-9150-a4803d8e7b24/wtf-1-m) |
 [wtf-1-f](https://store.sansar.com/listings/a37aa7c6-c592-45d0-b8ea-a37d30c96fa8/wtf-1-f) |
-
-|
-[chair-f-5](https://store.sansar.com/listings/a83849c0-2101-4aaa-a6c5-9d4dbb30e269/chair-f-5) |
-[chair-f-5-independant](https://store.sansar.com/listings/21bcaa11-f1b0-43c4-9185-25b44a9620e8/chair-f-5-independant) |
