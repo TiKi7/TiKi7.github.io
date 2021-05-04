@@ -69,6 +69,8 @@ Other Options... | Description
 
 Version | Log 
 :--- | :--- 
+3.4.0 | // <Message> to comment on the video. /on/ and /off/ to turn this On and Off.
+3.4.0 | Added /ta to change AudioStream source (Moderator's Only Access)
 3.3.4 | Minor Updates
 3.3.3 | Added tlock on and tlock off event names
 3.3.2 | Added Bilibili.com to supported websites. (its a chinese web service)
