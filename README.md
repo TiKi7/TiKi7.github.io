@@ -1,7 +1,7 @@
 ![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)
 # TKMedia Documentation ([BUY/UPDATE](https://store.sansar.com/listings/1b1274e3-0f40-45f4-8d82-325d1a1c5235/tkmedia))
-> - current version: 3.5
-> - release date   : August 20 2021
+> - current version: 3.5.1
+> - release date   : August 24 2021
 
 TKMedia Includes Two Scripts on Purchase. `Media` and `Event`.
 - `Media` is your Main script and you have to add it to your Experience only once. by Adding this script, you can use all the ChatBox Commands that is Described in this page.
@@ -69,6 +69,7 @@ Other Options... | Description
 
 Version | Log 
 :--- | :--- 
+3.5.1 | //tk will not show video title in the chatbox
 3.5.0 | ---
 3.4.0 | // <Message> to comment on the video. /on/ and /off/ to turn this On and Off.
 3.4.0 | Added /ta to change AudioStream source (Moderator's Only Access)
