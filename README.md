@@ -69,8 +69,7 @@ Other Options... | Description
 
 Version | Log 
 :--- | :--- 
------ | if you know more similar formats that needs to be blocked, you can message me. 
-3.5.4 | loading .m4a using /tk will freeze your media script. from now on its blocked. but if you need it as a radio link, you can use /ta command.
+3.5.4 | loading .m4a using /tk will freeze your media script. from now on its blocked. but if you need it as a radio link, you can use /ta command. (if you know more similar formats that needs to be blocked, you can message me. )
 3.5.3 | "/tk off" or "/url" will turn off media screen. it may help to fix choppy voice chat when there is no video playing.
 3.5.1 | //tk will not show video title in the chatbox
 3.5.0 | ---
