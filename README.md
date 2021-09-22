@@ -1,7 +1,7 @@
 ![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)
 # TKMedia Documentation ([BUY/UPDATE](https://store.sansar.com/listings/1b1274e3-0f40-45f4-8d82-325d1a1c5235/tkmedia))
-> - current version: 3.5.3
-> - release date   : September 12 2021
+> - current version: 3.5.4
+> - release date   : September 22 2021
 
 TKMedia Includes Two Scripts on Purchase. `Media` and `Event`.
 - `Media` is your Main script and you have to add it to your Experience only once. by Adding this script, you can use all the ChatBox Commands that is Described in this page.
@@ -69,6 +69,8 @@ Other Options... | Description
 
 Version | Log 
 :--- | :--- 
+----- | if you know more similar formats that needs to be blocked, you can message me. 
+3.5.4 | loading .m4a using /tk will freeze your media script. from now on its blocked. but if you need it as a radio link, you can use /ta command.
 3.5.3 | "/tk off" or "/url" will turn off media screen. it may help to fix choppy voice chat when there is no video playing.
 3.5.1 | //tk will not show video title in the chatbox
 3.5.0 | ---
