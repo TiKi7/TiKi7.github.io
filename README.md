@@ -16,9 +16,9 @@ Command | Description
 /tk Options... | Description
  :--- | :---
 /tk https://www.youtube.com/watch?v=F8gPLTk_ehQ | Plays the Link
-/tk https://www.youtube.com/watch?v=F8gPLTk_ehQ 125 | Plays at 02:05 
-/tk https://www.youtube.com/watch?v=F8gPLTk_ehQ loop | Plays in a loop
-/tk https://www.youtube.com/watch?v=F8gPLTk_ehQ&list=RDZFXoWhux1ts list | Plays its Playlist
+/tk https://www.youtube.com/watch?v=F8gPLTk_ehQ -125 | Plays at 02:05 
+/tk https://www.youtube.com/watch?v=F8gPLTk_ehQ -loop | Plays in a loop
+/tk https://www.youtube.com/watch?v=F8gPLTk_ehQ&list=RDZFXoWhux1ts -list | Plays its Playlist
 
 > You can open any kind of link but Sources listed bellow are specially supported!
 
@@ -36,8 +36,8 @@ Command | Description
  :--- | :---
 /tk find THEY. - Count Me In | Searchs for Youtube videos with "THEY. - Count Me In" keyWord 
 /tk 7 | Plays Result 7 
-/tk 7 loop | Plays Result 7 in loop 
-/tk 7 65 | Plays Result 7 at 01:05
+/tk 7 -loop | Plays Result 7 in loop 
+/tk 7 -65 | Plays Result 7 at 01:05
 
 
 /tch Options... | Description
@@ -69,6 +69,7 @@ Other Options... | Description
 
 Version | Log 
 :--- | :--- 
+4.0.6 | from this version on a "-" will be added before all optional parameters (Example: -loop instead of loop)
 3.5.5 | Now Supporting M3U8 Files.
 3.5.4 | loading .m4a using /tk will freeze your media script. from now on its blocked. but if you need it as a radio link, you can use /ta command. (if you know more similar formats that needs to be blocked, you can message me. )
 3.5.3 | "/tk off" or "/url" will turn off media screen. it may help to fix choppy voice chat when there is no video playing.
