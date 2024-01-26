@@ -1,7 +1,7 @@
 ![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)
 # TKMedia Documentation ([BUY/UPDATE](https://store.sansar.com/listings/1b1274e3-0f40-45f4-8d82-325d1a1c5235/tkmedia))
-> - current version: 4.0.6
-> - release date   : November 19 2022
+> - current version: 4.0.10
+> - release date   : Jan 26 2024
 
 TKMedia Includes Two Scripts on Purchase. `Media` and `Event`.
 - `Media` is your Main script and you have to add it to your Experience only once. by Adding this script, you can use all the ChatBox Commands that is Described in this page.
@@ -69,6 +69,8 @@ Other Options... | Description
 
 Version | Log 
 :--- | :--- 
+4.0.10 | added a new overparam parameter called `gate`. [example file](https://raw.githubusercontent.com/TiKi7/TiKi7.github.io/master/gatefile.txt)
+4.0.9 | added `overparam` input to script properties. this input, overrides all the parameters users may add to their `/tk videolink -params=value` calls inworld.
 4.0.6 | from this version on a "-" will be added before all optional parameters (Example: -loop instead of loop)
 3.5.5 | Now Supporting M3U8 Files.
 3.5.4 | loading .m4a using /tk will freeze your media script. from now on its blocked. but if you need it as a radio link, you can use /ta command. (if you know more similar formats that needs to be blocked, you can message me. )
