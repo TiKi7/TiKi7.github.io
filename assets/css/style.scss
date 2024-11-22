@@ -13,6 +13,10 @@
 }
 html{
   background-color: var(--tk-bg);
+  cursor: url('../cursor/icons8-cursor-75.svg') 15 15, auto;  /* Adjusted to 15 15 to better match cursor tip */
+  * {  /* This applies to all elements */
+    cursor: inherit;  /* This makes all elements inherit the cursor style */
+  }
 }
 /* Hide header */
 #header_wrap {
