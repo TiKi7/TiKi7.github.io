@@ -56,13 +56,13 @@ pre {
 }
 
 table {
-  background-color: transparent;
+  background-color: #0000004d;
   border: 1px solid transparent;
 }
 
 th {
-  background-color: #161b22;
-  color: #c9d1d9;
+  background-color: transparent;
+  color: var(--tk-text);
 }
 
 td {
