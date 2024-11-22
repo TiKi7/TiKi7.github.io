@@ -1,0 +1,39 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+a {
+  color: #58a6ff;
+}
+
+a:hover {
+  color: #79c0ff;
+}
+
+code {
+  background-color: #2d2d2d;
+  color: #d4d4d4;
+}
+
+table {
+  background-color: #2d2d2d;
+}
+
+th, td {
+  border: 1px solid #404040;
+}
+
+blockquote {
+  color: #8b949e;
+  border-left: 3px solid #404040;
+}
+
+hr {
+  background-color: #404040;
+}
