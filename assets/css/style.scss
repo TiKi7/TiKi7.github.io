@@ -3,6 +3,14 @@
 
 @import "{{ site.theme }}";
 
+:root {
+  --tk-bg: #158db1;
+  --tk-bg-light: #ffffff;
+  --tk-text: #ffffff;
+  --tk-text-dark :#12415f;
+  --tk-a: #fcff84;
+}
+
 /* Hide header */
 #header_wrap {
   display: none;
@@ -12,43 +20,44 @@
 #main_content_wrap {
   margin-top: 0;
   padding-top: 20px;
-  background-color: #0d1117;
+  background-color: var(--tk-bg);
 }
 
 /* Dark theme overrides */
 body {
-  background-color: #0d1117;
+  background-color: var(--tk-bg);
   color: #c9d1d9;
 }
 
 #footer_wrap {
-  background: #161b22;
+  background: var(--tk-bg);
 }
 
 a {
-  color: #58a6ff;
+  color: var(--tk-a);
   text-shadow: none;
 }
 
 a:hover {
-  color: #79c0ff;
+  color: var(--tk-text);
   text-decoration: underline;
 }
 
 code {
-  background-color: #2d2d2d;
-  color: #d4d4d4;
+  background-color: var(--tk-bg-light);
+  color: var(--tk-text-dark);
   border: 1px solid #404040;
+  border-radius: 4px;
 }
 
 pre {
-  background-color: #2d2d2d;
-  border: 1px solid #404040;
+  // background-color: #2d2d2d;
+  // border: 1px solid #404040;
 }
 
 table {
-  background-color: #2d2d2d;
-  border: 1px solid #404040;
+  background-color: transparent;
+  border: 1px solid transparent;
 }
 
 th {
@@ -57,7 +66,8 @@ th {
 }
 
 td {
-  border: 1px solid #404040;
+  border-color: transparent;
+  border-bottom: 1px solid white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -75,7 +85,7 @@ hr {
 }
 
 .highlight {
-  background-color: #2d2d2d;
+  background-color: transparent;
   color: #d4d4d4;
 }
 
