@@ -1,7 +1,6 @@
 ![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)
 # TKMedia Documentation ([BUY/UPDATE](https://store.sansar.com/listings/1b1274e3-0f40-45f4-8d82-325d1a1c5235/tkmedia))
 
-# TKMedia v4 Documentation
 > - Current Version: 4.0.10.2
 > - Release Date: January 2024
 > - [Purchase/Update](https://store.sansar.com/listings/1b1274e3-0f40-45f4-8d82-325d1a1c5235/tkmedia)
@@ -23,27 +22,24 @@ TKMedia includes two scripts:
 
 ### Essential Settings
 
- 
-Setting | Description | Example
-:--- | :--- | :---
-Default URL | Media that plays on world entry | `youtube.com/watch?v=...`
-Locked Mode | Restrict media control to moderators | ON for public worlds
-Moderators List | Who can control media when locked | `username1,username2,{event}`
-Map Visibility | Show your world on TKMedia's map | Enable for discovery
- 
+| Setting | Description | Example |
+| :--- | :--- | :--- |
+| Default URL | Media that plays on world entry | `youtube.com/watch?v=...` |
+| Locked Mode | Restrict media control to moderators | ON for public worlds |
+| Moderators List | Who can control media when locked | `username1,username2,{event}` |
+| Map Visibility | Show your world on TKMedia's map | Enable for discovery |
 
 ### Default Channels
 
- 
-Channel | Purpose | Note
-:--- | :--- | :---
-Channel 0 | Empty (no media) | Use for quiet zones
-Channel 1 | Public (default URL) | Main channel
- 
+| Channel | Purpose | Note |
+| :--- | :--- | :--- |
+| Channel 0 | Empty (no media) | Use for quiet zones |
+| Channel 1 | Public (default URL) | Main channel |
 
 ### Adding Custom Channels
 ```
 Format: ChannelName,DefaultURL
+
 Examples:
 music,https://youtube.com/watch?v=... -loop -50v
 ambient,https://soundcloud.com/... -radio
