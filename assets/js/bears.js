@@ -3,13 +3,13 @@ class Bear {
         this.element = document.createElement('div');
         this.element.className = 'floating-bear';
         
-        // Random size between 30px and 80px
-        this.size = Math.random() * 50 + 30;
+        // Random size between 60px and 160px (doubled from 30-80)
+        this.size = Math.random() * 100 + 60;
         this.element.style.width = `${this.size}px`;
         this.element.style.height = `${this.size}px`;
         
         // Speed based on size (bigger bears move faster)
-        this.duration = (15 - (this.size - 30) / 50 * 7) * 1000; // 8-15 seconds
+        this.duration = (15 - (this.size - 60) / 100 * 7) * 1000; // 8-15 seconds
         
         // Random position outside content area
         const contentWidth = 800; // matches CSS var(--content-width)
@@ -33,7 +33,7 @@ class Bear {
         this.element.style.top = `${window.innerHeight + this.size}px`;
         
         // Add slight wobble
-        this.wobbleAmount = Math.random() * 30 - 15; // -15 to 15 pixels
+        this.wobbleAmount = Math.random() * 50 - 25; // -25 to 25 pixels (increased wobble for bigger bears)
         this.wobbleSpeed = Math.random() * 2 + 1; // 1-3 seconds
         
         document.body.appendChild(this.element);
