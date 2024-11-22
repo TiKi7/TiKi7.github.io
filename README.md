@@ -21,6 +21,7 @@ TKMedia includes two scripts:
 ## ⚙️ Initial Setup
 
 ### Essential Settings
+
 Setting | Description | Example
 :--- | :--- | :---
 Default URL | Media that plays on world entry | `youtube.com/watch?v=...`
