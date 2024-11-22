@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="80" version="1.1" viewBox="0 0 60 80" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#ffffff" fill-opacity="0.15">
+    <!-- Bear head -->
+    <circle cx="30" cy="40" r="20"/>
+    <!-- Ears -->
+    <circle cx="15" cy="25" r="8"/>
+    <circle cx="45" cy="25" r="8"/>
+    <!-- Eyes -->
+    <circle cx="23" cy="37" r="3" fill-opacity="0.2"/>
+    <circle cx="37" cy="37" r="3" fill-opacity="0.2"/>
+    <!-- Nose -->
+    <circle cx="30" cy="43" r="4" fill-opacity="0.2"/>
+    <!-- Mouth -->
+    <path d="M 26,46 Q 30,49 34,46" stroke="#ffffff" stroke-width="2" fill="none" stroke-opacity="0.2"/>
+  </g>
+</svg>
