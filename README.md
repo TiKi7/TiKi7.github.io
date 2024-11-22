@@ -109,7 +109,7 @@ https://youtube.com/playlist?list=... -list -loop
 ### Basic Channel Commands
 - `/tch` - Show all channels
 - `/tch <number>` - Switch channel
-- `/tch open <n>` - Create new channel (moderators)
+- `/tch open <name>` - Create new channel (moderators)
 - `/tch close <number>` - Remove channel (moderators)
 
 ### Setting Up Channels
