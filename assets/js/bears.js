@@ -15,17 +15,20 @@ class Bear {
         const contentWidth = 800; // matches CSS var(--content-width)
         const windowWidth = window.innerWidth;
         const sideSpace = (windowWidth - contentWidth) / 2;
+        const maxOverlap = 30; // maximum pixels a bear can overlap with content area
         
-        // 70% chance to spawn in wider side areas, 30% chance to spawn in gaps between content
+        // Calculate spawn position (90% chance for sides, 10% for slight content overlap)
         let x;
-        if (Math.random() < 0.7) {
-            // Spawn in side areas
+        if (Math.random() < 0.9) {
+            // Spawn fully in side areas
             x = Math.random() < 0.5 ? 
                 Math.random() * (sideSpace - this.size) : // Left side
                 windowWidth - sideSpace + Math.random() * (sideSpace - this.size); // Right side
         } else {
-            // Spawn in gaps between content (if any)
-            x = Math.random() * (windowWidth - this.size);
+            // Slight overlap with content edges
+            x = Math.random() < 0.5 ?
+                (sideSpace - maxOverlap) + Math.random() * maxOverlap : // Left edge
+                (windowWidth - sideSpace - maxOverlap) + Math.random() * maxOverlap; // Right edge
         }
         
         // Start below screen
