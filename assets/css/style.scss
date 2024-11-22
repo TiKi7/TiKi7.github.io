@@ -197,6 +197,6 @@ body::before {
 
 body::after {
   content: "";
-  @extend .side-column;
+  @extend .side-column;          
   @extend .side-column-right;
 }
