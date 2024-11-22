@@ -1,6 +1,7 @@
 ![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)
 # TKMedia Documentation ([BUY/UPDATE](https://store.sansar.com/listings/1b1274e3-0f40-45f4-8d82-325d1a1c5235/tkmedia))
 
+# TKMedia v4 Documentation
 > - Current Version: 4.0.10.2
 > - Release Date: January 2024
 > - [Purchase/Update](https://store.sansar.com/listings/1b1274e3-0f40-45f4-8d82-325d1a1c5235/tkmedia)
@@ -22,18 +23,23 @@ TKMedia includes two scripts:
 
 ### Essential Settings
 
+ 
 Setting | Description | Example
 :--- | :--- | :---
 Default URL | Media that plays on world entry | `youtube.com/watch?v=...`
 Locked Mode | Restrict media control to moderators | ON for public worlds
 Moderators List | Who can control media when locked | `username1,username2,{event}`
 Map Visibility | Show your world on TKMedia's map | Enable for discovery
+ 
 
 ### Default Channels
+
+ 
 Channel | Purpose | Note
 :--- | :--- | :---
 Channel 0 | Empty (no media) | Use for quiet zones
 Channel 1 | Public (default URL) | Main channel
+ 
 
 ### Adding Custom Channels
 ```
@@ -45,6 +51,8 @@ ambient,https://soundcloud.com/... -radio
 
 ## 📋 Command Reference
 
+ 
+
 Command | Description
 :--- | :---
 `/tiki` | Shows version info and command list
@@ -52,7 +60,11 @@ Command | Description
 `/tlock` | [Moderators] Shows lock status
 `/tlock on/off` | [Moderators] Controls media lock
 
+ 
+
 ### Media Controls
+
+ 
 
 Command | Description | Example
 :--- | :--- | :---
@@ -63,7 +75,11 @@ Command | Description | Example
 `/url <url>` | Direct URL override | `/url direct.mp4`
 `//` | Add comment (if enabled) | `// Great song!`
 
+ 
+
 ### Channel System
+
+ 
 
 Command | Description | Example
 :--- | :--- | :---
@@ -72,9 +88,16 @@ Command | Description | Example
 `/tch open <name>` | [Moderators] Create channel | `/tch open Music Room`
 `/tch close <number>` | [Moderators] Delete channel | `/tch close 3`
 
+ 
+
 ## 🎵 Media Support
 
+ 
+
 ### Supported Platforms
+
+ 
+
 Platform | Features | Notes
 :--- | :--- | :---
 YouTube | Videos, Playlists | Best compatibility
@@ -84,8 +107,11 @@ Vimeo | Videos | Standard playback
 Bilibili | Videos | Basic support
 Direct Files | MP4, M3U8, WebM | Check compatibility first
 
+ 
+
 ### URL Parameters
-Add these to your URLs to customize playback:
+
+ 
 
 Parameter | Effect | Example
 :--- | :--- | :---
@@ -98,7 +124,10 @@ Parameter | Effect | Example
 `-list` | Force playlist mode | `-list` (YouTube)
 `-radio` | Radio stream mode | `-radio`
 
+ 
+
 #### Example Combinations
+
 ```
 Background music at 50% volume:
 youtube.com/watch?v=... -loop -50v
@@ -110,9 +139,14 @@ Playlist on repeat:
 youtube.com/playlist?list=... -list -loop
 ```
 
+ 
+
 ## 🔒 Moderation
 
+ 
+
 ### Basic Controls
+
 Command | Effect | Note
 :--- | :--- | :---
 `/tlock on` | Lock media control | Recommended for public worlds
@@ -120,7 +154,10 @@ Command | Effect | Note
 `/on/` | Enable comments | Let users comment on media
 `/off/` | Disable comments | Disable comment system
 
+ 
+
 ### Setting Up Moderators
+
 1. Add usernames to moderator list
 2. Separate with commas
 3. Include `{event}` for triggers
@@ -128,30 +165,45 @@ Command | Effect | Note
 Example: tiki-8590,yourname,{event}
 ```
 
+ 
+
 ## 💡 Common Setups
 
+ 
+
 ### Background Music
+
 ```
 1. Set Default URL: youtube.com/watch?v=... -loop -50v
 2. Enable Lock: /tlock on
 3. Add moderators to list
 ```
 
+ 
+
 ### Multi-Room Audio
+
 ```
 1. Create channel per room: /tch open RoomName
 2. Set default URLs for each
 3. Add Event triggers at entrances
 ```
 
+ 
+
 ### Event Triggers
+
 ```
 1. Add {event} to moderator list
 2. Place Event script on trigger
 3. Use tch{i=?} for channel changes
 ```
 
+ 
+
 ## ❓ Troubleshooting Guide
+
+ 
 
 Problem | Check | Solution
 :--- | :--- | :---
@@ -160,17 +212,23 @@ No control | Lock status | Check moderator status
 Choppy voice chat | Active media | Use `/tk off` when idle
 Channel issues | Channel number | Use `/tch` to verify
 
+ 
+
 ## 🎯 Pro Tips
+
 - Use `-50v` to `-70v` for background music
 - Test URLs before public use
 - Create "Empty" channels for quiet zones
 - Keep moderator list updated
 - Include `{event}` if using triggers
 
+ 
+
 Need help? Contact: tiki-8590
 
 ---
 *TKMedia v4.0.10.2 - Making Sansar Worlds More Interactive*
+
 
 
 ### Logs
