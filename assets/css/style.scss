@@ -9,6 +9,8 @@
   --tk-text: #ffffff;
   --tk-text-dark :#12415f;
   --tk-a: #fcff84;
+  --content-width: 800px;
+  --side-width: calc((100% - var(--content-width)) / 2);
 }
 
 /* Hide header */
@@ -16,17 +18,114 @@
   display: none;
 }
 
-/* Adjust main content to remove header space */
+/* Animated background */
+@keyframes floatUp1 {
+  from { background-position: 0 0; }
+  to { background-position: 0 -80px; }
+}
+
+@keyframes floatUp2 {
+  from { background-position: 10px 20px; }
+  to { background-position: -20px -100px; }
+}
+
+@keyframes floatUp3 {
+  from { background-position: -15px 10px; }
+  to { background-position: 25px -120px; }
+}
+
+/* Side columns with bears */
+.side-column {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: var(--side-width);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Multiple bear layers */
+.side-column::before,
+.side-column::after,
+.side-column {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/bear.svg');
+  background-repeat: repeat;
+}
+
+/* First layer */
+.side-column {
+  background-size: 50px 70px;
+  animation: floatUp1 35s linear infinite;
+  opacity: 0.4;
+}
+
+/* Second layer */
+.side-column::before {
+  background-size: 70px 90px;
+  animation: floatUp2 45s linear infinite;
+  opacity: 0.3;
+}
+
+/* Third layer */
+.side-column::after {
+  background-size: 40px 60px;
+  animation: floatUp3 30s linear infinite;
+  opacity: 0.5;
+}
+
+.side-column-left {
+  left: 0;
+}
+
+.side-column-right {
+  right: 0;
+  transform: scaleX(-1); /* Mirror the right side for variety */
+}
+
+/* Adjust animation delays for right side */
+.side-column-right::before {
+  animation-delay: -15s;
+}
+
+.side-column-right::after {
+  animation-delay: -25s;
+}
+
+/* Gradient overlays for sides */
+.side-column::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, 
+    transparent 0%,
+    var(--tk-bg) 100%);
+}
+
+/* Main content wrapper */
 #main_content_wrap {
-  margin-top: 0;
-  padding-top: 20px;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: var(--content-width);
   background-color: var(--tk-bg);
+  position: relative;
+  z-index: 1;
 }
 
 /* Dark theme overrides */
 body {
   background-color: var(--tk-bg);
   color: var(--tk-text);
+  margin: 0;
+  padding: 0;
 }
 
 #footer_wrap {
@@ -89,7 +188,15 @@ hr {
   color: #d4d4d4;
 }
 
-#project_title, #project_tagline {
-  color: #c9d1d9;
-  text-shadow: none;
+/* Add the side columns to the body */
+body::before {
+  content: "";
+  @extend .side-column;
+  @extend .side-column-left;
+}
+
+body::after {
+  content: "";
+  @extend .side-column;
+  @extend .side-column-right;
 }
