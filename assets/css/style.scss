@@ -26,7 +26,7 @@
 /* Dark theme overrides */
 body {
   background-color: var(--tk-bg);
-  color: #c9d1d9;
+  color: var(--tk-text);
 }
 
 #footer_wrap {
@@ -71,12 +71,12 @@ td {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #c9d1d9;
+  color: var(--tk-text);
   text-shadow: none;
 }
 
 blockquote {
-  color: #8b949e;
+  color: var(--tk-text);
   border-left: 3px solid #404040;
 }
 
