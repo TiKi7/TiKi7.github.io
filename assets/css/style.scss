@@ -11,7 +11,9 @@
   --tk-a: #fcff84;
   --content-width: 800px;
 }
-
+html{
+  background-color: var(--tk-bg);
+}
 /* Hide header */
 #header_wrap {
   display: none;
@@ -32,9 +34,16 @@
   margin: 0 auto;
   padding: 20px;
   max-width: var(--content-width);
-  background-color: var(--tk-bg);
+  background-color: transparent;
   position: relative;
   z-index: 1;
+  /* Remove any overflow or clip properties */
+  overflow: visible;
+  /* Add transparent borders to prevent hard edges */
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  /* Use a background clip to keep the background within the content */
+  background-clip: padding-box;
 }
 
 /* Dark theme overrides */
@@ -43,6 +52,8 @@ body {
   color: var(--tk-text);
   margin: 0;
   padding: 0;
+  /* Ensure no overflow hiding at body level */
+  overflow-x: hidden;
 }
 
 #footer_wrap {
