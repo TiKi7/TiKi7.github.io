@@ -10,7 +10,6 @@
   --tk-text-dark :#12415f;
   --tk-a: #fcff84;
   --content-width: 800px;
-  --side-width: calc((100% - var(--content-width)) / 2);
 }
 
 /* Hide header */
@@ -18,85 +17,14 @@
   display: none;
 }
 
-/* Animated background */
-@keyframes floatUp1 {
-  from { transform: translateY(0); }
-  to { transform: translateY(-80px); }
-}
-
-@keyframes floatUp2 {
-  from { transform: translate(10px, 0); }
-  to { transform: translate(-20px, -100px); }
-}
-
-@keyframes floatUp3 {
-  from { transform: translate(-15px, 0); }
-  to { transform: translate(25px, -120px); }
-}
-
-/* Side columns with bears */
-.bear-container {
+/* Bear styling */
+.floating-bear {
   position: fixed;
-  top: 0;
-  bottom: 0;
-  width: var(--side-width);
+  background-image: url('../images/bear.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   pointer-events: none;
   z-index: 0;
-  overflow: hidden;
-}
-
-.bear-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('../images/bear.svg');
-  background-repeat: repeat;
-}
-
-/* First layer */
-.bear-layer-1 {
-  background-size: 50px 70px;
-  animation: floatUp1 35s linear infinite;
-  opacity: 0.4;
-}
-
-/* Second layer */
-.bear-layer-2 {
-  background-size: 70px 90px;
-  animation: floatUp2 45s linear infinite;
-  opacity: 0.3;
-}
-
-/* Third layer */
-.bear-layer-3 {
-  background-size: 40px 60px;
-  animation: floatUp3 30s linear infinite;
-  opacity: 0.5;
-}
-
-/* Container positions */
-.bear-container-left {
-  left: 0;
-}
-
-.bear-container-right {
-  right: 0;
-  transform: scaleX(-1);
-}
-
-/* Animation delays for right side */
-.bear-container-right .bear-layer-1 {
-  animation-delay: -12s;
-}
-
-.bear-container-right .bear-layer-2 {
-  animation-delay: -25s;
-}
-
-.bear-container-right .bear-layer-3 {
-  animation-delay: -7s;
 }
 
 /* Main content wrapper */
@@ -170,17 +98,4 @@ hr {
 .highlight {
   background-color: transparent;
   color: #d4d4d4;
-}
-
-/* Add the side columns to the body */
-body::before {
-  content: "";
-  @extend .bear-container;
-  @extend .bear-container-left;
-}
-
-body::after {
-  content: "";
-  @extend .bear-container;
-  @extend .bear-container-right;
 }

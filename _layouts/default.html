@@ -9,25 +9,14 @@
   </head>
 
   <body>
-    <!-- Left bear container -->
-    <div class="bear-container bear-container-left">
-      <div class="bear-layer bear-layer-1"></div>
-      <div class="bear-layer bear-layer-2"></div>
-      <div class="bear-layer bear-layer-3"></div>
-    </div>
-
-    <!-- Right bear container -->
-    <div class="bear-container bear-container-right">
-      <div class="bear-layer bear-layer-1"></div>
-      <div class="bear-layer bear-layer-2"></div>
-      <div class="bear-layer bear-layer-3"></div>
-    </div>
-
     <!-- Main content -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         {{ content }}
       </section>
     </div>
+
+    <!-- Bear animation script -->
+    <script src="{{ '/assets/js/bears.js' | relative_url }}"></script>
   </body>
 </html>
