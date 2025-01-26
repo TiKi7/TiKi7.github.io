@@ -1,8 +1,8 @@
 ![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)
 # TKMedia Documentation ([BUY/UPDATE](https://store.sansar.com/listings/1b1274e3-0f40-45f4-8d82-325d1a1c5235/tkmedia))
 
-> - Current Version: 4.0.10.2
-> - Release Date: January 2024
+> - Current Version: 4.0.11
+> - Release Date: January 2025
 > - [Purchase/Update](https://store.sansar.com/listings/1b1274e3-0f40-45f4-8d82-325d1a1c5235/tkmedia)
 
 ## 📦 Package Contents
@@ -192,6 +192,7 @@ Need help? Contact: tiki-8590
 
 Version | Log 
 :--- | :--- 
+4.0.11 | fixing problems with TK.Event script which caused the whole script going down
 4.0.10 | added a new overparam parameter called `gate`. [example file](https://raw.githubusercontent.com/TiKi7/TiKi7.github.io/master/gatefile.txt)
 4.0.9 | added `overparam` input to script properties. this input, overrides all the parameters users may add to their `/tk videolink -params=value` calls inworld.
 4.0.6 | from this version on a "-" will be added before all optional parameters (Example: -loop instead of loop)
