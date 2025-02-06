@@ -1,8 +1,8 @@
 ![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)![TK Logo](/logo.png)
 # TKMedia Documentation ([BUY/UPDATE](https://store.sansar.com/listings/1b1274e3-0f40-45f4-8d82-325d1a1c5235/tkmedia))
 
-> - Current Version: 4.0.12
-> - Release Date: January 2025
+> - Current Version: 4.0.13
+> - Release Date: Feb 2025
 > - [Purchase/Update](https://store.sansar.com/listings/1b1274e3-0f40-45f4-8d82-325d1a1c5235/tkmedia)
 
 ## 📦 Package Contents
@@ -160,7 +160,7 @@ ambient,https://ambient-sound.com
 ```
 1. Include {event} in moderators list
 2. Create Simple Script trigger
-3. Use "tch{i=?}" (? = channel number)
+3. Use "tk_activate/deactivate_all/agent" (to put the script on standby for individuals)
 ```
 
 ## ❓ Troubleshooting
@@ -192,6 +192,7 @@ Need help? Contact: tiki-8590
 
 Version | Log 
 :--- | :--- 
+4.0.13 | new Feature that lets TKMedia be put on Standby. in this state it wont effect media streams in the world.  no interfering with other media management scripts
 4.0.12 | Better and faster page title processing
 4.0.11 | fixing problems with TK.Event script which caused the whole script going down
 4.0.10 | added a new overparam parameter called `gate`. [example file](https://raw.githubusercontent.com/TiKi7/TiKi7.github.io/master/gatefile.txt)
