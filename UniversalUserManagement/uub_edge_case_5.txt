@@ -1,4 +1,4 @@
-#sansar/uum
+#!sansar/uum
 [global]
 +
 # Empty header
