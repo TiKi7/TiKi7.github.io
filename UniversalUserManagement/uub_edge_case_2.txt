@@ -1,4 +1,4 @@
-#sansar/uum
+#!sansar/uum
 [invalid_id_format
 +name
 alice
