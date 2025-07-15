@@ -1,4 +1,4 @@
-# Invalid header
+#! Invalid header
 [script123]
 +name
 alice
