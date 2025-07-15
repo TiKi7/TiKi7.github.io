@@ -1,4 +1,4 @@
-#sansar/uum
+#!sansar/uum
 # Missing ID section
 +name
 alice
