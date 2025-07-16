@@ -1,24 +1,9 @@
 #!sansar/uum
 # Missing ID section
 +name
-alice
-bob
-charlie
-dave
-emma
-frank
-grace
-heidi
-ivan
-julia
-karen
-leo
-mia
-nina
-oliver
-penny
-quinn
-rachel
-steve
-tina
+1101
+1102
+1103
+1104
+1105
 # Comment line
