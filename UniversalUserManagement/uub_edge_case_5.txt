@@ -2,24 +2,9 @@
 [global]
 +
 # Empty header
-alice
-bob
-charlie
-dave
-emma
-frank
-grace
-heidi
-ivan
-julia
-karen
-leo
-mia
-nina
-oliver
-penny
-quinn
-rachel
-steve
-tina
+5501
+5502
+5503
+5504
+5505
 # Comment line
