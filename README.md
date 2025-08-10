@@ -5,181 +5,194 @@
 > - Release Date: Feb 2025
 > - [Purchase/Update](https://store.sansar.com/listings/1b1274e3-0f40-45f4-8d82-325d1a1c5235/tkmedia)
 
-## 📦 Package Contents
-TKMedia includes two scripts:
-- `Media` - Main script (ONE instance per world)
-- `Event` - Optional script for trigger-based media control
+Welcome to the official documentation for TKMedia, a powerful and versatile media player designed for the Sansar virtual world. This guide will provide you with everything you need to know to install, use, and master TKMedia.
 
-⚠️ **IMPORTANT:** Add the Media script to only ONE object in your world!
+## Table of Contents
 
-## 🚀 Quick Start Guide
-1. Add script to your world (ONE copy only!)
-2. Drop it on any object (preferably small and hidden)
-3. Set your default media URL
-4. Save and test!
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [User Commands](#user-commands)
+  - [YouTube Search](#youtube-search)
+  - [Playback Parameters](#playback-parameters)
+- [Moderator Commands](#moderator-commands)
+- [Event System](#event-system)
+- [Frontend Player](#frontend-player)
+- [EvoBoard Integration](#evoboard-integration)
+- [Advanced Topics](#advanced-topics)
+  - [Channels](#channels)
+  - [Overparam](#overparam)
+  - [Security](#security)
 
-⚠️ **IMPORTANT:** Only ONE instance per world! Multiple copies will cause conflicts.
+---
 
-## ⚙️ Initial Setup
+## Introduction
 
-### Essential Settings
-1. **Default URL** 
-   - Set the media that plays when someone enters your world
-   - Example: `https://youtube.com/watch?v=...`
+TKMedia is a comprehensive media playback solution for Sansar that allows you to play a wide variety of media from different sources directly in your world. It features a robust backend script for managing media and a sleek frontend player for a seamless user experience.
 
-2. **Locked Mode**
-   - ON: Only moderators can control media (recommended for public worlds)
-   - OFF: Anyone can control media
+---
 
-3. **Moderators List**
-   - List who can control media when locked
-   - Format: `username1,username2,{event}`
-   - Always include `{event}` if using event triggers
-   - Example: `tiki-8590,yourname,{event}`
+## Features
 
-4. **Map Visibility**
-   - Shows your world on TKMedia's map
-   - Useful for discovery
+### Backend (C# for Sansar)
 
-### Channel Setup
-Start with default channels:
-- Channel 0: Empty (no media)
-- Channel 1: Public (plays default URL)
+*   **Multi-Channel System:** Create multiple media channels that users can join and switch between.
+*   **Moderation:** Lock the media player and assign moderators who can control the playback.
+*   **Event System:** Control the media player through script events, allowing for integration with other objects and systems in your world.
+*   **EvoBoard Integration:** Display scoreboards from EvoBoard directly on the media player.
+*   **Customizable:** Configure default URLs, channels, and moderators to fit your needs.
 
-Add custom channels:
-```
-Format: ChannelName,DefaultURL
-Example:
-music,https://music-url.com
-ambient,https://ambient-sound.com
-```
+### Frontend (HTML/JS)
 
-## 📺 Playing Media
+*   **Wide Range of Supported Services:**
+    *   YouTube (including search)
+    *   Twitch
+    *   Vimeo
+    *   SoundCloud
+    *   Bilibili
+    *   Zeno.fm
+    *   Mixcloud
+    *   Direct video/audio files (.mp4, .m4v, .m3u8, .webm, .ogv, .mp3)
+*   **Console Interface:** A console-like display provides feedback and information to users.
+*   **Audio-Only Mode:** A "flow" mode for listening to audio without video.
+*   **Security:** Block or whitelist specific users or URLs from using the media player.
 
-### Basic Controls
-- `/tk <url>` - Play any media
-- `/tk find <search>` - Search for media
-- `/tk <number>` - Play from search results
-- `/ta <url>` - Play audio only
-- `/url <url>` - Direct URL override
-- `//` - Make a comment (if enabled)
+---
 
-### System Commands
-- `/tiki` - Show help and version info
-- `/tbug` - Show debug info (moderators only)
+## Getting Started
 
-### Supported Media
-- YouTube (videos & playlists)
-- Twitch (streams & clips)
-- Vimeo
-- SoundCloud
-- Bilibili
-- Mixcloud
-- Direct files (MP4, M3U8, WebM, OGV)
-- Internet radio
+1.  **Add the `Media` script** to an object in your Sansar world.
+2.  **Configure the script properties** in the editor:
+    *   `isActive`: Set to `true` to have the media player active by default.
+    *   `isLocked`: Set to `true` to restrict control to moderators.
+    *   `Default Url`: The media that will play by default in the "Public" channel.
+    *   `Channels`: Add additional channels in the format `ChannelName,DefaultUrl`.
+    *   `Moderators`: A comma-separated list of Sansar usernames who can control the player when it's locked.
+3.  **Save and build** your world.
 
-### Customize Playback
-Add these to your URLs:
-```
--loop           Loop media
--2x             Double speed (any number works)
--50v            50% volume
--mute           Start muted
--t=30           Start at 30 seconds
--crop=30-45     Play only seconds 30-45
--list           Force playlist mode (YouTube)
--radio          Radio stream mode
--noreload       Prevent page reload
-```
+---
 
-Examples:
-```
-Background music at 50% volume:
-https://youtube.com/watch?v=... -loop -50v
+## User Commands
 
-Play video segment on repeat:
-https://youtube.com/watch?v=... -crop=100-105 -loop
+These commands can be used by any user in the chat.
 
-Playlist on repeat:
-https://youtube.com/playlist?list=... -list -loop
-```
+| Command             | Description                                                                                             |
+| ------------------- | ------------------------------------------------------------------------------------------------------- |
+| `/tiki`             | Displays a help message with a list of available commands.                                              |
+| `/tk <url>`         | Plays media from a URL.                                                                                 |
+| `/ta <audiolink>`   | Plays an audio stream. Use `/ta` with no link to stop the audio.                                        |
+| `/tch`              | Lists all available channels.                                                                           |
+| `/tch <index>`      | Joins the specified channel.                                                                            |
+| `// <message>`      | Sends a comment to the current channel, which will be displayed on the media player.                    |
+| `/url <link>`       | Plays a direct URL. This is useful for media that is not automatically recognized by `/tk`.             |
 
-## 📡 Channel System
+### YouTube Search
 
-### Basic Channel Commands
-- `/tch` - Show all channels
-- `/tch <number>` - Switch channel
-- `/tch open <name>` - Create new channel (moderators)
-- `/tch close <number>` - Remove channel (moderators)
+You can search for YouTube videos directly from the chat.
 
-### Setting Up Channels
-Default Channels:
-- Channel 0: Empty (no media)
-- Channel 1: Public (plays default URL)
+| Command                | Description                                      |
+| ---------------------- | ------------------------------------------------ |
+| `/tk find <keywords>`  | Searches YouTube for videos with the given keywords. |
+| `/tk <index>`          | Plays a video from the search results.           |
 
-Add Custom Channels:
-```
-Format: ChannelName,DefaultURL
-Example:
-music,https://music-url.com
-ambient,https://ambient-sound.com
-```
+### Playback Parameters
 
-## 🔒 Moderation
+You can add parameters to the `/tk` command to modify the playback.
 
-### Moderator Commands
-- `/tlock` - Check lock status
-- `/tlock on` - Lock media player
-- `/tlock off` - Unlock media player
-- `/on/` - Enable comments
-- `/off/` - Disable comments
+| Parameter           | Service       | Description                                                                                             |
+| ------------------- | ------------- | ------------------------------------------------------------------------------------------------------- |
+| `-<seconds>`        | All           | Seeks to the specified time in seconds (e.g., `-125`).                                                  |
+| `-loop`             | All           | Loops the current media.                                                                                |
+| `-radio`            | All           | Enters audio-only mode with a visualizer.                                                               |
+| `-list`             | YouTube       | Forces the link to be treated as a playlist.                                                            |
+| `-<rate>x`          | YouTube       | Sets the playback speed (e.g., `-2x` for double speed).                                                 |
+| `-<volume>v`        | YouTube       | Sets the volume from 0 to 100 (e.g., `-70v`).                                                           |
+| `-crop=<start-end>` | YouTube       | Plays only a specific segment of the video (e.g., `-crop=60-120`).                                       |
+| `-max`              | Twitch        | Attempts to set the video quality to the maximum available.                                             |
 
-### Advanced Settings
-- **World Lock**: Use `/tlock on` in public worlds
-- **Comments**: Enable/disable with `/on/` and `/off/`
-- **Channels**: Create separate channels for different areas
-- **Event Triggers**: Include `{event}` in moderator list
+---
 
-## 💡 Common Setups
+## Moderator Commands
 
-### Background Music
-```
-1. Set Default URL to your music
-2. Add "-loop -50v" to URL
-3. Enable Locked mode
-```
+These commands can only be used by moderators when the player is locked.
 
-### Multi-Room Audio
-```
-1. Create channel per room
-2. Add event triggers
-3. Place triggers at entrances
-```
+| Command             | Description                                                                                             |
+| ------------------- | ------------------------------------------------------------------------------------------------------- |
+| `/tlock <on/off>`   | Locks or unlocks the media player.                                                                      |
+| `/tch open <name>`  | Opens a new channel with the specified name.                                                            |
+| `/tch close <index>`| Closes the specified channel.                                                                           |
+| `/on/`              | Enables comments.                                                                                       |
+| `/off/`             | Disables comments.                                                                                      |
 
-### Event Triggers
-```
-1. Include {event} in moderators list
-2. Create Simple Script trigger
-3. Use "tk_activate/deactivate_all/agent" (to put the script on standby for individuals)
-```
+---
 
-## ❓ Troubleshooting
+## Event System
 
-### Media Not Playing?
-1. Check URL format
-2. Verify lock status
-3. Confirm channel number
+The `Media` script can be controlled through script events, allowing for powerful integrations with your Sansar world.
 
-### Can't Control Media?
-1. Check if locked
-2. Verify moderator status
-3. Try reloading
+| Event Name            | Description                                                                                             |
+| --------------------- | ------------------------------------------------------------------------------------------------------- |
+| `tk_activate_all`     | Activates the media player for all users.                                                               |
+| `tk_deactivate_all`   | Deactivates the media player for all users, putting them in standby mode.                               |
+| `tk_activate_agent`   | Activates the media player for the agent who triggered the event.                                       |
+| `tk_deactivate_agent` | Deactivates the media player for the agent who triggered the event.                                     |
 
-## 🎯 Pro Tips
-- Use -50v to -70v for background music
-- Test URLs before public use
-- Create "Empty" channels for quiet zones
-- Keep moderator list updated
+You can use the `Event` script provided to trigger these events.
+
+---
+
+## Frontend Player
+
+The frontend is an HTML and JavaScript-based player that handles the actual playback of media. It receives commands from the backend script via URL hash changes and can play media from a wide variety of sources.
+
+---
+
+## EvoBoard Integration
+
+TKMedia can display scoreboards from Evo games using the `EvoBoard` script.
+
+1.  **Add the `EvoBoard` script** to an object in your world.
+2.  **Configure the script properties:**
+    *   `TK.Channel Index`: The channel where the scoreboard will be displayed.
+    *   `Scoreboard Name`: The name of the scoreboard to display.
+    *   `isTimeBased`: Set to `true` if the scores are time-based.
+    *   `isAscending`: Set to `true` to sort scores from low to high.
+    *   `Banner Image URL`: A URL for an image to display at the top of the scoreboard.
+    *   `Background Color`: The background color of the scoreboard.
+    *   `Font Color`: The font color of the scoreboard.
+    *   `Scoreboard URL`: The URL of the Evo scoreboard.
+    *   `Display Width` and `Display Height`: The dimensions of the scoreboard display.
+
+---
+
+## Advanced Topics
+
+### Channels
+
+TKMedia's channel system allows you to have multiple media streams running at the same time.
+
+*   **Channel 0 (Empty):** A special channel that is always empty.
+*   **Channel 1 (Public):** The default public channel.
+*   **Custom Channels:** You can create your own channels in the `Media` script's properties.
+
+Users can switch between channels using the `/tch <index>` command.
+
+### Overparam
+
+The `Overparam` property in the `Media` script allows you to add or override parameters for all media requests. This can be used to enforce certain settings, such as looping or volume. The format is a space-separated list of parameters, e.g., `-loop -2x -70v`.
+
+### Security
+
+The `Overparam` property can also be used to set up a whitelist or blacklist for users and URLs. By adding `-gate=<url>` to the `Overparam` field, you can point to a text file containing the rules.
+
+The format for the rules file is as follows:
+
+*   `+USER:Tiki-8590` - Whitelists a user.
+*   `-USER:BadUser-1234` - Blacklists a user.
+*   `+URL:www.youtube.com/*` - Whitelists a URL (wildcards are supported).
+*   `-URL:www.badsite.com/*` - Blacklists a URL.
+*   Lines starting with `#` are ignored.
+
 
 Need help? Contact: tiki-8590
 
