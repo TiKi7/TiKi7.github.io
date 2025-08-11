@@ -9,7 +9,7 @@
   --tk-text: #ffffff;
   --tk-text-dark :#12415f;
   --tk-a: #fcff84;
-  --content-width: 800px;
+  --content-width: 900px;
 }
 html{
   background-color: var(--tk-bg);
@@ -50,6 +50,10 @@ html{
   background-clip: padding-box;
 }
 
+#main_content_wrap {
+  max-width: 100%;
+}
+
 /* Dark theme overrides */
 body {
   background-color: var(--tk-bg);
@@ -84,6 +88,7 @@ code {
 table {
   background-color: #0000004d;
   border: 1px solid transparent;
+  width: 100%;
 }
 
 th {
